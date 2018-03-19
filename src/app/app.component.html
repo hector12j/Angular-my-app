@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -18,3 +18,11 @@
   </li>
 </ul>
 
+<app-cabecera></app-cabecera>
+<app-footer></app-footer> -->
+<h1 class="container bg-dark text-center my-4 py-4">ngIf show= {{show}}</h1>
+<div class="comntainer">
+  <button class="btn btn-warning" (click)="show=!show">Accion</button>
+  <p class="textInfo" *ngIf="show">{{title}}</p>
+
+</div>
