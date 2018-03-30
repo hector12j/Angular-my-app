@@ -1,0 +1,15 @@
+<p>
+  ngclass works!
+</p>
+	<h1 class="container bg-dark text-center my-4 py-4">[ngClass]</h1>
+	<div class="comntainer">
+	  <button class="btn btn-dark mb-3" (click)="activo='primero'">Primero</button>
+	  <button class="btn btn-danger mb-3" (click)="activo='segundo'">Segundo</button>
+
+	  <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">
+	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsam quidem doloremque a reiciendis, magnam tenetur, animi explicabo fugiat officia, eveniet nostrum distinctio assumenda! Suscipit ipsam laudantium modi harum laboriosam.
+	  </p>
+	  <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">
+	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt asperiores in neque quisquam velit, deserunt dicta repellendus eligendi molestiae esse magnam, a quis facere, eum cum? Dicta, similique, nam! Incidunt.
+	  </p>
+	</div>

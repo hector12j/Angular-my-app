@@ -1,0 +1,15 @@
+<p>
+  ngifelse works!
+</p>
+
+<h1 class="container bg-dark text-center my-4 py-4">ngIf show= {{show}}</h1>
+<div class="comntainer">
+  <button class="btn btn-warning" (click)="show=!show">Accion</button>
+  <p class="textInfo" *ngIf="show; else showDos">{{title}}</p>
+
+  <ng-template #showDos>
+    <p class="text-danger">
+      Lorem ipsum dolor sit amet
+    </p>
+  </ng-template>  
+</div>
